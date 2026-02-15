@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>StarShow - Shows</title>
+<link rel="stylesheet" href="css/shows.css">
+</head>
+<body>
+
+    <!--navabr-->
+    <div>
+    
+        <nav class="navbar">
+            <div class="logo">StarShow</div>
+            <ul class="nav-links">
+                 <li class="searchItem">
+                    <div class="search-wrapper">
+                        <span id="searchText" onclick="openSearch()">Search</span>
+
+                        <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search..."
+                        oninput="searchContent()"
+                        style="display: none;"
+                        />
+
+                        <!-- Search result cards will appear here -->
+                        <div id="searchResults" class="search-results"></div>
+                </div>
+                </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="shows.html">Shows</a></li>
+                    <li><a href="log in.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <!-- list of shows -->
+    <div>
+        <h1>Netflix Shows</h1>
+
+        <div class="card-container">
+
+            <!-- CARD 1 -->
+            <div class="card">
+
+                <img src="image/stranger things.jfif">
+                <h3>Stranger Things</h3>
+                <p>Sci-Fi Thriller</p>
+                <div class="rating">⭐⭐⭐⭐☆</div>
+
+                <textarea placeholder="Write a comment..."></textarea>
+                <button onclick="addComment(this)">Post</button>
+
+                <ul class="comments"></ul>
+
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card">
+
+                <img src="image/Money hiest.jfif">
+                <h3>Money Heist</h3>
+                <p>Crime Drama</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                <textarea placeholder="Write a comment..."></textarea>
+                <button onclick="addComment(this)">Post</button>
+
+                <ul class="comments"></ul>
+
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="card">
+                <img src="image/the witcher.jfif">
+                <h3>The Witcher</h3>
+                <p>Fantasy Action</p>
+                <div class="rating">⭐⭐⭐⭐☆</div>
+
+                <textarea placeholder="Write a comment..."></textarea>
+                <button onclick="addComment(this)">Post</button>
+
+                <ul class="comments"></ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div>
+        <h1>Amazon Prime Shows</h1>
+
+        <div class="card-container">
+
+            <!-- CARD 1 -->
+            <div class="card">
+
+                <img src="image/the boys.jfif">
+                <h3>The Boys</h3>
+                <p>Superhero Satire</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                <textarea placeholder="Write a comment..."></textarea>
+                <button onclick="addComment(this)">Post</button>
+
+                <ul class="comments"></ul>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card">
+
+                <img src="image/mirzapur.jfif">
+                <h3>Mirzapur</h3>
+                <p>Action</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                <textarea placeholder="Write a comment..."></textarea>
+                <button onclick="addComment(this)">Post</button>
+
+                <ul class="comments"></ul>  
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="card">  
+
+                <img src="image/panchayat.jfif">
+                <h3>Panchayat</h3>
+                <p>Comedy Drama</p>
+                <div class="rating">⭐⭐⭐⭐☆</div>    
+
+                <textarea placeholder="Write a comment..."></textarea>
+                <button onclick="addComment(this)">Post</button> 
+
+                <ul class="comments"></ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <h1>HBO Shows</h1>  
+
+        <div class="card-container">
+
+            <!-- CARD 1 -->
+            <div class="card">
+
+                <img src="image/got.jfif">
+                <h3>Game of Thrones</h3>
+                <p>Fantasy Drama</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                <textarea placeholder="Write a comment..."></textarea>
+                <button onclick="addComment(this)">Post</button>
+
+                <ul class="comments"></ul>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card">
+
+                <img src="image/westworld.jfif">
+                <h3>Westworld</h3>
+                <p>Sci-Fi Mystery</p>
+                <div class="rating">⭐⭐⭐⭐☆</div>
+
+                <textarea placeholder="Write a comment..."></textarea>
+                <button onclick="addComment(this)">Post</button>
+
+                <ul class="comments"></ul>  
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="card">  
+
+                <img src="image/succession.jfif">
+                <h3>Succession</h3>
+                <p>Drama</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>    
+
+                <textarea placeholder="Write a comment..."></textarea>
+                <button onclick="addComment(this)">Post</button> 
+
+                <ul class="comments"></ul>
+
+            </div>
+        </div>  
+    </div>
+
+    <script src="js/home.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
