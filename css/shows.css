@@ -73,7 +73,7 @@ body {
   width: 340px;
   max-height: 420px;
   overflow-y: auto;
-  background: #fff;
+  background: none;
   border-radius: 14px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.18);
   padding: 10px;
@@ -193,4 +193,5 @@ button {
     padding: 8px;
     border-radius: 5px;
     margin-bottom: 6px;
+
 }
